@@ -1,0 +1,35 @@
+:root {
+  --white: 0, 0%, 100%;
+  --light-gray: 212, 45%, 89%;
+  --grayish-blue: 220, 15%, 55%;
+  --dark-blue: 218, 44%, 22%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-height: 100dvh;
+  max-width: 375px;
+  margin-inline: auto;
+  background-color: hsl(var(--light-gray));
+  color: hsl(var(--dark-blue));
+  font-size: 0.9375rem;
+
+  @media (min-width: 800px) {
+    max-width: 800px;
+  }
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+a {
+  &:hover {
+    text-decoration: underline;
+  }
+}
