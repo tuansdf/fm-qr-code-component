@@ -14,13 +14,10 @@ body {
   min-height: 100dvh;
   max-width: 375px;
   margin-inline: auto;
+  padding-inline: 1rem;
   background-color: hsl(var(--light-gray));
   color: hsl(var(--dark-blue));
   font-size: 0.9375rem;
-
-  @media (min-width: 800px) {
-    max-width: 800px;
-  }
 }
 
 button,
